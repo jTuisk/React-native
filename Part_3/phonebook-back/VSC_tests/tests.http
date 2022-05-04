@@ -1,0 +1,32 @@
+get http://localhost:3001/persons/2
+
+###
+DELETE http://localhost:3001/persons/2
+
+###
+POST http://localhost:3001/persons
+Content-Type: application/json
+
+{
+    "name": "test",
+    "number": "0401234567"
+}
+
+###
+POST http://localhost:3001/persons
+Content-Type: application/json
+
+{
+    "name": "test",
+    "number": ""
+}
+
+
+###
+POST http://localhost:3001/persons
+Content-Type: application/json
+
+{
+    "name": "",
+    "number": "0401234567"
+}
